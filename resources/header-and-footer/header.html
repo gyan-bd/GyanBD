@@ -1,0 +1,78 @@
+<!-- Font Awesome for Search Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    :root {
+        --primary-blue: #2563eb;
+        --dark-bg: #0f172a;
+    }
+    #main-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        z-index: 1000;
+        transition: top 0.3s ease-in-out;
+        padding: 12px 0;
+    }
+    .header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+    .logo-area {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+    }
+    .logo-icon {
+        width: 45px;
+        height: 45px;
+    }
+    .logo-text {
+        font-size: 32px;
+        font-weight: 800;
+        color: var(--primary-blue);
+        font-family: sans-serif;
+    }
+    .search-btn {
+        background-color: var(--dark-bg);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: opacity 0.2s;
+    }
+    .search-btn:hover {
+        opacity: 0.9;
+    }
+    .search-btn i {
+        font-size: 16px;
+    }
+</style>
+
+<header id="main-header">
+    <div class="header-container">
+        <a href="/" class="logo-area">
+            <!-- আপনার অরিজিনাল লোগো ইমেজের সোর্স এখানে দিন -->
+            <img src="/assets/logo.png" alt="Gyan.BD Logo" class="logo-icon">
+            <span class="logo-text">Gyan.BD</span>
+        </a>
+        
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>খুঁজুন</span>
+        </button>
+    </div>
+</header>
